@@ -4,7 +4,7 @@
     "description": "",
     "main": "sw.js",
     "scripts": {
-        "build": "npx workbox-cli generateSW workbox-config"
+        "workbox": "npx workbox-cli generateSW workbox-config"
     },
     "author": "",
     "license": "ISC"
