@@ -1,0 +1,11 @@
+{
+    "name": "demo-center",
+    "version": "1.0.0",
+    "description": "",
+    "main": "sw.js",
+    "scripts": {
+        "build": "npx workbox-cli generateSW workbox-config"
+    },
+    "author": "",
+    "license": "ISC"
+}

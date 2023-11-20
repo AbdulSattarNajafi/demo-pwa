@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- ============ Favicons ============ -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../assets/favicons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../assets/favicons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../assets/favicons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./../manifest.json" />
+
+        <!-- ============ CSS ============ -->
+        <link rel="stylesheet" href="./../css/animations.css" />
+        <link rel="stylesheet" href="./../css/style.css" />
+        <title>Simplified SecOps</title>
+    </head>
+    <body>
+        <div id="products">
+            <!-- ============== Header Start ================ -->
+            <header class="header">
+                <div class="header-container">
+                    <!-- ------- Header Shape -------- -->
+                    <div class="header__shape">
+                        <div class="header__shape-line">
+                            <div class="header__shape-rectangle"></div>
+                        </div>
+                        <div class="header__shape-box">
+                            <div class="header__box">
+                                <div class="header__box-inner">
+                                    <div class="header__box-line"></div>
+                                    <div class="header__box-line"></div>
+                                    <div class="header__box-rect"></div>
+                                    <div class="header__box-rect"></div>
+                                    <div class="header__box-bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ------- Header Title -------- -->
+                    <div class="header__title products-header-title">
+                        <h1>The Ransomware Kill Chain</h1>
+                        <img src="./../assets/icons/header-light.png" alt="light" />
+                    </div>
+
+                    <!-- ------- Header Shape -------- -->
+                    <div class="header__shape">
+                        <div class="header__shape-box right-shape">
+                            <div class="header__box">
+                                <div class="header__box-inner">
+                                    <div class="header__box-rect"></div>
+                                    <div class="header__box-rect"></div>
+                                    <div class="header__box-line"></div>
+                                    <div class="header__box-line"></div>
+                                    <div class="header__box-bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__shape-line right-side">
+                            <div class="header__shape-rectangle"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------ Nav links ------ -->
+                <nav class="container nav product-nav">
+                    <a href="../index.html" class="nav-link-home">
+                        <span class="icons-wrapper">
+                            <img
+                                class="nav-link-light"
+                                src="./../assets/icons/light-circle.png"
+                                alt="light icon"
+                            />
+                            <img
+                                class="nav-link-icon"
+                                src="./../assets/icons/sangfor-logo-2.png"
+                                alt="Sangfor Logo"
+                            />
+                        </span>
+                        <span>Homepage</span>
+                    </a>
+                    <div class="nav-link-container">
+                        <button class="nav-link demo" id="record-demo-btn">
+                            <span class="nav-link-text">Recorded Demo</span>
+                        </button>
+                        <a href="#" class="nav-link live-demo external__links">
+                            <span class="nav-link-text">live Demo</span>
+                        </a>
+                    </div>
+                </nav>
+            </header>
+            <!-- ============== Header End ================ -->
+
+            <main class="products container">
+                <div class="products-content">
+                    <!-- Prev Button -->
+                    <div role="button" class="products__btn play-prev-btn">
+                        <img src="./../assets/icons/prev.png" alt="" />
+                    </div>
+
+                    <!-- Scene Frame -->
+                    <div class="products__frame">
+                        <img
+                            class="products__frame-img"
+                            src="./../assets/icons/frame.png"
+                            alt="frame"
+                        />
+
+                        <!-- ------- Scene Video Player -------- -->
+                        <div class="products__frame-video">
+                            <img id="image-player" alt="Scene" />
+                            <video muted src="" id="video-player"></video>
+                        </div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div role="button" class="products__btn play-next-btn">
+                        <img src="./../assets/icons/next.png" alt="" />
+                    </div>
+                </div>
+
+                <!-- ---------  Controls --------- -->
+                <div class="controls">
+                    <!-- Scebe Badge -->
+                    <div class="products__frame-scene" id="scene-badge"></div>
+
+                    <img src="./../assets/icons/desktop.png" alt="icon" />
+                    <div class="controls-container">
+                        <div class="controls__texts">
+                            <h3>Ransomware Protection</h3>
+                            <p>Ransomware translation</p>
+                        </div>
+                        <div class="controls__time">
+                            <div class="timeline-container">
+                                <div class="timeline">
+                                    <div class="thumb-indicator"></div>
+                                </div>
+                            </div>
+
+                            <div class="controls__time-timeline">
+                                <p id="time-display">0:0</p>
+                                <p id="video-duration">0:0</p>
+                            </div>
+                        </div>
+
+                        <div class="controls__buttons">
+                            <div role="button" id="first-btn" class="controls__buttons-btn skip">
+                                <img src="./../assets/icons/first-btn.png" alt="icon" />
+                            </div>
+                            <div role="button" class="play-prev-btn controls__buttons-btn">
+                                <img src="./../assets/icons/prev-btn.png" alt="icon" />
+                            </div>
+                            <button id="play-pause-btn" class="play-pause-btn">
+                                <img
+                                    class="play-icon"
+                                    src="./../assets/icons/play.png"
+                                    alt="icon"
+                                />
+                                <img
+                                    class="pause-icon"
+                                    src="./../assets/icons/pause.png"
+                                    alt="icon"
+                                />
+                            </button>
+                            <div role="button" class="play-next-btn controls__buttons-btn">
+                                <img src="./../assets/icons/next-btn.png" alt="icon" />
+                            </div>
+                            <div role="button" id="last-btn" class="controls__buttons-btn skip">
+                                <img src="./../assets/icons/last-btn.png" alt="icon" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="recoded-demo">
+                <button class="recoded-demo-close-btn">&times;</button>
+                <video class="recoded-demo-video" playsinlie autoplay muted controls>
+                    <source src="./../assets/videos/intro.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+
+        <!-- =========== Scripts ============== -->
+        <script src="./../js/app.js"></script>
+        <script src="./../js/protection.js"></script>
+    </body>
+</html>
