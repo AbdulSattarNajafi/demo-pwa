@@ -78,43 +78,45 @@
                         </div>
                     </div>
                 </div>
+            </header>
+            <!-- ============== Header End ================ -->
 
-                <!-- ------ Nav links ------ -->
-                <nav class="container nav product-nav">
-                    <a href="../index.html" class="nav-link-home">
-                        <span class="icons-wrapper">
+            <main class="products">
+                <div class="products-content container">
+                    <!-- ------ Home Link ------ -->
+                    <a href="../index.html" class="link-homepage">
+                        <span class="link-homepage-icons">
                             <img
-                                class="nav-link-light"
+                                class="link-homepage-light"
                                 src="./../assets/icons/light-circle.png"
                                 alt="light icon"
                             />
                             <img
-                                class="nav-link-icon"
+                                class="link-homepage-icon"
                                 src="./../assets/icons/sangfor-logo-2.png"
                                 alt="Sangfor Logo"
                             />
                         </span>
-                        <span>Homepage</span>
+                        <span class="link-homepage-text">Homepage</span>
                     </a>
-                    <div class="nav-link-container">
-                        <button class="nav-link demo" id="record-demo-btn">
-                            <span class="nav-link-text">Recorded Demo</span>
-                            <span class="nav-link-bg"></span>
-                        </button>
-                        <a href="#" class="nav-link live-demo external__links">
-                            <span class="nav-link-text">live Demo</span>
-                            <span class="nav-link-bg"></span>
-                        </a>
-                    </div>
-                </nav>
-            </header>
-            <!-- ============== Header End ================ -->
 
-            <main class="products container">
-                <div class="products-content">
+                    <!-- -------- Demo Buttons ----- -->
+                    <div class="demo-buttons">
+                        <a href="#" class="demo-buttons-btn external__links">
+                            <span class="demo-buttons-text">live Demo</span>
+                            <span class="demo-buttons-bg"></span>
+                        </a>
+                        <button class="demo-buttons-btn" id="record-demo-btn">
+                            <span class="demo-buttons-text">Recorded Demo</span>
+                            <span class="demo-buttons-bg"></span>
+                        </button>
+                    </div>
+
                     <!-- Prev Button -->
-                    <div role="button" class="products__btn play-prev-btn">
-                        <img src="./../assets/icons/prev.png" alt="" />
+                    <div class="products-buttons">
+                        <div role="button" class="products__btn play-prev-btn">
+                            <img src="./../assets/icons/prev.png" alt="" />
+                        </div>
                     </div>
 
                     <!-- Scene Frame -->
@@ -133,17 +135,20 @@
                     </div>
 
                     <!-- Next Button -->
-                    <div role="button" class="products__btn play-next-btn">
-                        <img src="./../assets/icons/next.png" alt="" />
+                    <div class="products-buttons">
+                        <div role="button" class="products__btn play-next-btn">
+                            <img src="./../assets/icons/next.png" alt="" />
+                        </div>
                     </div>
                 </div>
 
                 <!-- ---------  Controls --------- -->
-                <div class="controls">
+                <div class="controls container">
                     <!-- Scebe Badge -->
                     <div class="products__frame-scene" id="scene-badge"></div>
 
-                    <img src="./../assets/icons/desktop.png" alt="icon" />
+                    <div class="products-buttons"></div>
+
                     <div class="controls-container">
                         <div class="controls__texts">
                             <h3>Ransomware Protection</h3>
@@ -189,6 +194,130 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="products-buttons"></div>
+                </div>
+
+                <!-- Products Light -->
+                <div class="product-light">
+                    <img
+                        src="./../assets/icons/frame-lights.png"
+                        class="product-light-img"
+                        alt="Lights"
+                    />
+                </div>
+
+                <!-- Products Menu -->
+                <div class="menu">
+                    <nav class="menu__nav container">
+                        <ul class="menu__nav-list">
+                            <li class="menu__nav-item">
+                                <!-- Link 1 -->
+                                <a href="#" class="menu__nav-link">
+                                    <span class="menu__nav-icons">
+                                        <img
+                                            class="menu__nav-light"
+                                            src="./../assets/icons/light-circle.png"
+                                            alt="light icon"
+                                        />
+                                        <img
+                                            class="menu__nav-icon"
+                                            src="./../assets/icons/ns-logo.png"
+                                            alt="Sangfor Logo"
+                                        />
+                                    </span>
+                                    <span class="menu__nav-text"
+                                        >Network <br />
+                                        Secure</span
+                                    >
+                                </a>
+                            </li>
+                            <!-- Link 2 -->
+                            <li class="menu__nav-item">
+                                <a href="#" class="menu__nav-link">
+                                    <span class="menu__nav-icons">
+                                        <img
+                                            class="menu__nav-light"
+                                            src="./../assets/icons/light-circle.png"
+                                            alt="light icon"
+                                        />
+                                        <img
+                                            class="menu__nav-icon"
+                                            src="./../assets/icons/iag-logo.png"
+                                            alt="Sangfor Logo"
+                                        />
+                                    </span>
+                                    <span class="menu__nav-text"
+                                        >Internet Access <br />
+                                        Gateway</span
+                                    >
+                                </a>
+                            </li>
+                            <!-- Link 3 -->
+                            <li class="menu__nav-item">
+                                <a href="#" class="menu__nav-link">
+                                    <span class="menu__nav-icons">
+                                        <img
+                                            class="menu__nav-light"
+                                            src="./../assets/icons/light-circle.png"
+                                            alt="light icon"
+                                        />
+                                        <img
+                                            class="menu__nav-icon"
+                                            src="./../assets/icons/cc-logo.png"
+                                            alt="Sangfor Logo"
+                                        />
+                                    </span>
+                                    <span class="menu__nav-text"
+                                        >Cyber <br />
+                                        Command</span
+                                    >
+                                </a>
+                            </li>
+                            <!-- Link 4 -->
+                            <li class="menu__nav-item">
+                                <a href="#" class="menu__nav-link">
+                                    <span class="menu__nav-icons">
+                                        <img
+                                            class="menu__nav-light"
+                                            src="./../assets/icons/light-circle.png"
+                                            alt="light icon"
+                                        />
+                                        <img
+                                            class="menu__nav-icon"
+                                            src="./../assets/icons/es-logo.png"
+                                            alt="Sangfor Logo"
+                                        />
+                                    </span>
+                                    <span class="menu__nav-text"
+                                        >Endpoint <br />
+                                        Secure</span
+                                    >
+                                </a>
+                            </li>
+                            <!-- Link 5 -->
+                            <li class="menu__nav-item">
+                                <a href="#" class="menu__nav-link">
+                                    <span class="menu__nav-icons">
+                                        <img
+                                            class="menu__nav-light"
+                                            src="./../assets/icons/light-circle.png"
+                                            alt="light icon"
+                                        />
+                                        <img
+                                            class="menu__nav-icon"
+                                            src="./../assets/icons/mdr-logo.png"
+                                            alt="Sangfor Logo"
+                                        />
+                                    </span>
+                                    <span class="menu__nav-text"
+                                        >Cyber <br />
+                                        Guardian</span
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </main>
 
