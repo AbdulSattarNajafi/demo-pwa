@@ -215,21 +215,21 @@ function handleTimelineUpdate(e) {
 }
 
 // Update Video Container Height
-const header = document.querySelector('.header');
-const controls = document.querySelector('.controls');
-const light = document.querySelector('.product-light');
-const menu = document.querySelector('.menu');
-const videoContainer = document.querySelector('.products__frame-video');
-const paddingMargin = 30;
-updateContainerHeight();
+// const header = document.querySelector('.header');
+// const controls = document.querySelector('.controls');
+// const light = document.querySelector('.product-light');
+// const menu = document.querySelector('.menu');
+// const videoContainer = document.querySelector('.products__frame-video');
+// const paddingMargin = 30;
+// updateContainerHeight();
 
-window.addEventListener('resize', updateContainerHeight);
+// window.addEventListener('resize', updateContainerHeight);
 
-function updateContainerHeight() {
-    const screenHeight = window.innerHeight - paddingMargin;
-    const headerControlsHeight =
-        header.clientHeight + controls.clientHeight + light.clientHeight + menu.clientHeight;
-    const height = Math.abs(screenHeight - headerControlsHeight);
+// function updateContainerHeight() {
+//     const screenHeight = window.innerHeight - paddingMargin;
+//     const headerControlsHeight =
+//         header.clientHeight + controls.clientHeight + light.clientHeight + menu.clientHeight;
+//     const height = Math.abs(screenHeight - headerControlsHeight);
 
-    videoContainer.style.height = `${height}px`;
-}
+//     videoContainer.style.height = `${height}px`;
+// }
