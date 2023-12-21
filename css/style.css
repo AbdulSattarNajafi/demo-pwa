@@ -1038,7 +1038,8 @@ img {
     position: relative;
     flex: 1;
     /* max-width: 1068px; */
-    max-width: 1004px;
+    /* max-width: 1004px; */
+    max-width: 884px;
     width: 100%;
 }
 
@@ -1052,7 +1053,7 @@ img {
 
 .products__frame-video {
     width: 100%;
-    padding: 2.2rem 1.7rem;
+    padding: 2rem 1.5rem;
     /* max-height: 513px; */
 }
 
