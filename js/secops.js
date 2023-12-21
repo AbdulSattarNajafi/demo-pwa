@@ -44,7 +44,14 @@ nextBtns.forEach((btn) => btn.addEventListener('click', playNextVideo));
 lastButton.addEventListener('click', playLastVideo);
 
 // =========== Video Player Event Listeners
-videoPlayer.addEventListener('dblclick', openFullscreen);
+videoPlayer.addEventListener('dblclick', () => {
+    openFullscreen();
+    if (videoPlayer.paused) {
+        playPauseButton.classList.add('paused');
+    } else {
+        playPauseButton.classList.remove('paused');
+    }
+});
 videoPlayer.addEventListener('loadedmetadata', (e) => {
     formatDuration(videoPlayer.duration, videoDuration);
 });

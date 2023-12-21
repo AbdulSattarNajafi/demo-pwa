@@ -46,7 +46,14 @@ nextBtns.forEach((btn) => btn.addEventListener('click', playNextVideo));
 lastButton.addEventListener('click', playLastVideo);
 
 // =========== Video Player Event Listeners
-videoPlayer.addEventListener('click', playPause);
+videoPlayer.addEventListener('dblclick', () => {
+    openFullscreen();
+    if (videoPlayer.paused) {
+        playPauseButton.classList.add('paused');
+    } else {
+        playPauseButton.classList.remove('paused');
+    }
+});
 videoPlayer.addEventListener('loadedmetadata', (e) => {
     formatDuration(videoPlayer.duration, videoDuration);
 });
@@ -214,6 +221,19 @@ function handleTimelineUpdate(e) {
     if (isScrubbing) {
         e.preventDefault();
         timelineContainer.style.setProperty('--progress-position', percent);
+    }
+}
+
+// Open fullscreen
+function openFullscreen() {
+    if (videoPlayer.requestFullscreen) {
+        videoPlayer.requestFullscreen();
+    } else if (videoPlayer.webkitRequestFullscreen) {
+        /* Safari */
+        videoPlayer.webkitRequestFullscreen();
+    } else if (videoPlayer.msRequestFullscreen) {
+        /* IE11 */
+        videoPlayer.msRequestFullscreen();
     }
 }
 

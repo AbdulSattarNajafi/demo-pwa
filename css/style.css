@@ -910,7 +910,11 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1230px;
+    width: 100%;
     gap: 2rem;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .link-homepage {
@@ -1085,7 +1089,11 @@ img {
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 7rem;
+    max-width: 1230px;
+    width: 100%;
+    gap: 5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
 }
 
 .products__frame-scene {
@@ -1098,7 +1106,6 @@ img {
     border-radius: 6px;
     font-size: 1.4rem;
     line-height: 2rem;
-    font-weight: 600;
     color: var(--color-brand-100);
     padding: 4px 2rem;
     z-index: 20;
@@ -1113,7 +1120,7 @@ img {
 }
 
 .controls__texts {
-    width: 240px;
+    width: 200px;
 }
 .controls__texts h3 {
     color: var(--color-brand-50);
@@ -1147,8 +1154,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 240px;
-    gap: 1rem;
+    width: 200px;
+    gap: 8px;
 }
 
 .controls__buttons-btn {
@@ -1156,8 +1163,8 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     transition: all 0.25s ease;
     cursor: pointer;
 }
@@ -1186,9 +1193,9 @@ img {
     justify-content: center;
     background-color: var(--color-brand-100);
     border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    margin: 0 1rem;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
     cursor: pointer;
 }
 .play-pause-btn:disabled {
@@ -1314,7 +1321,7 @@ img {
 /* ========== Product Light ========== */
 .product-light {
     width: 100%;
-    height: 36px;
+    height: 30px;
 }
 .product-light-img {
     width: 100%;
@@ -1348,14 +1355,14 @@ img {
     align-items: center;
     font-size: 12px;
     line-height: 1.2;
-    width: 146px;
+    width: 140px;
     gap: 8px;
 }
 
 .menu__nav-icons {
     position: relative;
     display: inline-block;
-    width: 52px;
+    width: 46px;
 }
 
 .menu__nav-icon {
@@ -1380,19 +1387,20 @@ img {
         max-height: 504px;
     } */
     .menu__nav-list {
-        gap: 1rem;
+        gap: 1.5rem;
     }
-    .menu__nav-link {
+    /* .menu__nav-link {
         width: 142px;
     }
     .menu__nav-icons {
         width: 50px;
-    }
+    } */
 }
 
 @media (max-width: 1199.98px) {
     .products-content {
         gap: 1rem;
+        padding: 0 1.6rem;
     }
     .link-homepage {
         left: 1.6rem;
@@ -1420,24 +1428,22 @@ img {
         /* max-height: 420px; */
         padding: 2rem 1.5rem;
     }
-    .products__frame-scene {
-        font-weight: 400;
-    }
     .controls {
-        gap: 3rem;
+        gap: 4rem;
+        padding: 0 1.6rem;
     }
-    .controls__texts {
+    /* .controls__texts {
         width: 210px;
-    }
+    } */
     .controls__texts h3 {
         font-size: 1.4rem;
     }
     .controls__texts p {
         font-size: 1.2rem;
     }
-    .controls__buttons {
+    /* .controls__buttons {
         width: 210px;
-    }
+    } */
     .controls__buttons-btn img {
         max-width: 20px;
     }
@@ -1447,9 +1453,9 @@ img {
     }
 
     .play-pause-btn {
-        width: 40px;
-        height: 40px;
-        margin: 0 5px;
+        /* width: 40px;
+        height: 40px; */
+        /* margin: 0 5px; */
     }
     .play-pause-btn img {
         max-width: 14px;
@@ -1470,9 +1476,15 @@ img {
         padding: 1.5rem 1.2rem;
         /* max-height: 365px; */
     }
+    .products__frame-scene {
+        top: -8px;
+    }
 }
 
 @media (max-width: 991.98px) {
+    .products-content {
+        padding: 0 1rem;
+    }
     .link-homepage {
         left: 1rem;
     }
@@ -1497,14 +1509,14 @@ img {
         /* max-height: 271px; */
     }
     .products__frame-scene {
-        top: -8px;
+        top: -6px;
         border-radius: 4px;
         font-size: 1.2rem;
-        font-weight: 400;
         padding: 0.2rem 1.2rem;
     }
     .controls {
-        /* gap: 2rem; */
+        gap: 3rem;
+        padding: 0 1rem;
     }
     .controls__texts {
         width: 150px;
@@ -1517,7 +1529,6 @@ img {
     }
     .controls__buttons {
         width: 150px;
-        gap: 8px;
     }
     .controls__buttons-btn {
         width: 20px;
@@ -1546,9 +1557,16 @@ img {
     .menu__nav-icons {
         width: 36px;
     }
+
+    .menu__nav-list {
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 859.98px) {
+    .products__frame-video {
+        padding: 1.2rem 1rem;
+    }
     .controls {
         gap: 2rem;
     }
